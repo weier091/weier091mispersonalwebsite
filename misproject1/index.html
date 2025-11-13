@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Weierke - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .content-container {
+            background: var(--primary-color, #202e48);
+            border: 1px solid #d7deeb;;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(180, 152, 152, 0.05);
+        }
+
+        .container-header {
+            border-bottom: 2px solid #d7deeb;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .container-header h1 {
+            color: #d7deeb;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .section:not(:last-child) {
+            border-bottom: 1px solid #d7deeb;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .welcome-video {
+            max-width: 300px;
+            margin: 0 auto 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: start;
+            margin-bottom: 2rem;
+        }
+
+        .profile-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .sports-section {
+            margin-top: 2rem;
+        }
+
+        .interests-grid {
+            display: grid;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .interest-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .interest-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .interest-item {
+                grid-template-columns: 1fr;
+            }
+            .profile-section,
+            .sports-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="discover.html">Discover UMD</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main class="content">
+        <!-- Welcome Video Section -->
+        <section class="section" id="welcome-video">
+            <h2 class="section-title">Welcome!</h2>
+            <div class="video-container">
+                <video width="100%" controls>
+                    <source src="videos/WIN_20251112_19_01_54_Pro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <div class="content-container">
+            <div class="container-header">
+                <h1>Personal Profile</h1>
+            </div>
+            
+            <!-- Professional Section -->
+            <section class="section" id="professional">
+                <h2 class="section-title">About Me</h2>
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="images/myprofpic.jpg" alt="My Profile Picture" class="profile-pic">
+                    </div>
+                    <div class="profile-content">
+                        <div class="professional-intro">
+                            <h2>Welcome to my Website!</h2>
+                            <p>Hi, my name is Jacob Weierke, and I'm from White Bear Lake, Minnesota. I'm currently attending the University of Minnesota Duluth, where I'm majoring in Accounting and building a strong foundation in finance and business.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- My Interests Section -->
+            <section class="section" id="interests">
+                <h2 class="section-title">My Interests</h2>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <img src="images/Hockey game 1.jpg" alt="Hockey Game" class="interest-image">
+                        <div class="interest-description">
+                            <p>Sports are one of my biggest passions, both as a participant and a fan. I particularly enjoy hockey, which has been a significant part of my life. I love the fast-paced nature of the game and the teamwork it requires. Whether I'm on the ice or watching from the stands, hockey represents the perfect blend of athleticism, strategy, and excitement that I value in sports.</p>
+                        </div>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-description">
+                            <p>One of my favorite ways to spend my free time is enjoying the outdoors through hunting and fishing. I like to go out and do these activities with friends and family as much as I can.</p>
+                        </div>
+                        <img src="images/yamaha.jpg" alt="My Sister and I in the Side by Side" class="interest-image">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer style="background: var(--primary-color); color: white; padding: 2rem 0; margin-top: 4rem; text-align: center;">
+        <div class="content">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p>&copy; 2025 Jacob Weierke. All rights reserved.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" style="color: var(--secondary-color); text-decoration: none;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" style="color: var(--secondary-color); text-decoration: none;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" style="color: var(--secondary-color); text-decoration: none;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

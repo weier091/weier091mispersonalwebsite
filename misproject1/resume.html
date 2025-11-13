@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Weierke - Resume</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .resume-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .resume-box {
+            background: var(--primary-color, #202e48);
+            border: 1px solid #d7deeb;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(180, 152, 152, 0.05);
+        }
+
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #d7deeb;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .resume-header h2 {
+            color: #d7deeb;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+        }
+
+        .resume-viewer {
+            width: 100%;
+            height: 800px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .button-container {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .resume-viewer {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu (same on all pages) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="discover.html">Discover UMD</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
+
+    <main class="resume-container">
+        <div class="resume-box">
+            <div class="resume-header">
+                <h2>My Resume</h2>
+                <a href="media/Resume (1) (1).pdf" download class="download-button">
+                    <i class="fas fa-download"></i>
+                    Download PDF
+                </a>
+            </div>
+            <div class="resume-content">
+                <iframe src="media/Resume (1) (1).pdf" class="resume-viewer" title="Resume PDF Viewer"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same on all pages) -->
+    <footer>
+        <p>&copy; 2025 Jacob Weierke. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Weierke - Discover UMD</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .discover-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .content-box {
+            background: var(--primary-color, #202e48);
+            border: 1px solid #d7deeb;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(180, 152, 152, 0.05);
+        }
+
+        .box-header {
+            border-bottom: 2px solid #d7deeb;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .box-header h2 {
+            color: #d7deeb;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .description {
+            color: #d7deeb;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .campus-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .campus-image:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu (same on all pages) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="discover.html">Discover UMD</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-container">
+        <!-- Video Section -->
+        <div class="content-box">
+            <div class="box-header">
+                <h2>UMD-Duluth!</h2>
+            </div>
+            <div class="video-container">
+                <video width="100%" controls>
+                    <source src="videos/MISDiscoverVideo2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Why I Chose UMD Section -->
+        <div class="content-box">
+            <div class="box-header">
+                <h2>Why I Chose UMD</h2>
+            </div>
+            <div class="description">
+                <p>
+                    I picked UMD because I really liked the campus and the tunnels here so that I wouldn't have to go outside in the winter. Another reason I picked UMD is because of the fantastic business program that they provide us with here, since I am an accounting major. Another I choose UMD because I really liked the location of the campus, I loved all of the outdoor activities that Duluth had to offer like, Skiing, hiking, fishing, and swimming.
+                </p>
+            </div>
+        </div>
+
+        <!-- Campus Images Section -->
+        <div class="content-box">
+            <div class="box-header">
+                <h2>Campus Views</h2>
+            </div>
+            <div class="image-grid">
+                <img src="images/spirit.jpg" alt="UMD Spirit Mountain" class="campus-image">
+                <img src="images/Bridge.jpg" alt="Duluth Aerial Lift Bridge" class="campus-image">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same on all pages) -->
+    <footer>
+        <p>&copy; 2025 Jacob Weierke. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
